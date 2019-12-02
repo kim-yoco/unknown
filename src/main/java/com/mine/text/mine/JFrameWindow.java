@@ -29,6 +29,8 @@ import org.apache.commons.codec.binary.Base64;
  *
  */
 public class JFrameWindow {
+	private static final String KEK_URL = "URL";
+	private static final String KEY_DATA = "DATA";
 	// 默认地址
 	JTextField txturl = new JTextField("C:\\Users\\admin\\Pictures\\desktop\\");
 	public JFrameWindow() {
@@ -49,9 +51,9 @@ public class JFrameWindow {
 		
 		Container c = jf.getContentPane();
 		c.setLayout(new GridLayout(4, 2, 10, 10));
-		c.add(new JLabel("URL"));
+		c.add(new JLabel(KEK_URL));
 		c.add(txturl);
-		c.add(new JLabel("DATA"));
+		c.add(new JLabel(KEY_DATA));
 //		c.add(txtdata);
 		c.add(tadata);
 		c.add(createBt);
